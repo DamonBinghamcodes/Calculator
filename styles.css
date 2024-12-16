@@ -10,6 +10,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Jetbrains Mono', monospace;
+    user-select: none;
 }
 
 body {
@@ -54,10 +55,10 @@ body {
 }
 
 .btnsContainer {
-display: flex;
-flex-direction: column;
-gap: 14px;
-flex: 8;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    flex: 8;
 }
 
 .btnRow {
@@ -71,7 +72,8 @@ flex: 8;
     flex: 4 !important;
 }
 
-.smRow > button:nth-child(1), .smRow > button:nth-child(2){
+.smRow>button:nth-child(1),
+.smRow>button:nth-child(2) {
     background: white !important;
     color: var(--bg-color) !important;
 }
@@ -95,9 +97,7 @@ flex: 8;
     font-size: 1.2rem;
 }
 
-/*Targeting the Equals Sign*/
-.btnRow:last-child >.btn:nth-child(3) {
-    background-color: var(--bg-color);
+.btnRow:last-child>.btn:nth-child(3) {
+    border-color: var(--bg-color);
     background: white;
-    color: var(--bg-color);
 }
